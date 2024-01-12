@@ -1,4 +1,7 @@
 
+*{
+  overflow-y: hidden;
+}
 #grid{
   display: grid;
   grid-template-columns: 4fr;
@@ -10,6 +13,7 @@
 }
 html{
   background: rgb(27, 27, 27);
+  overflow-y: hidden;
 }
 header{
   background: rgb(255, 174, 0);
@@ -24,10 +28,68 @@ main{
 li{
   list-style: none;
 }
-article{
+/* article{
   height: 300px;
   width: 300px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+} */
+.cards {
+	list-style: none;
+	white-space: nowrap;
+	max-width: calc(var(--cover-size) * 6);
+	overflow: scroll;
+  scroll-snap-type: x mandatory;
+  overflow-y:hidden ;
+}
+
+.cards li {
+	display: inline-block;
+	width: var(--cover-size);
+	aspect-ratio: 1;
+  scroll-snap-align: center;
+  view-timeline-name: --li-in-and-out-of-view;
+	view-timeline-axis: inline;
+  animation: linear adjust-z-index both;
+	animation-timeline: --li-in-and-out-of-view;
+  perspective: 40em;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.cards li > img {
+	/* Link an animation to the established view-timeline (of the parent li) and have it run during the contain phase */
+	animation: linear rotate-cover both;
+	animation-timeline: --li-in-and-out-of-view;
+}
+
+@keyframes adjust-z-index {
+	0% {
+		z-index: 1;
+	}
+	50% {
+		z-index: 100; /* When at the center, be on top */
+	}
+	100% {
+		z-index: 1;
+	}
+}
+
+@keyframes rotate-cover {
+	0% {
+		transform: translateX(-100%) rotateY(-95deg);
+	}
+	35% {
+		transform: translateX(0) rotateY(-45deg);
+	}
+	50% {
+		transform: rotateY(0deg) translateZ(0em) scale(1);
+	}
+	65% {
+		transform: translateX(0) rotateY(45deg);
+	}
+	100% {
+		transform: translateX(100%) rotateY(95deg);
+	}
 }
