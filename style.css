@@ -1,6 +1,6 @@
 
 *{
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 #grid{
   display: grid;
@@ -13,7 +13,6 @@
 }
 html{
   background: rgb(27, 27, 27);
-  overflow-y: hidden;
 }
 header{
   background: rgb(255, 174, 0);
@@ -21,6 +20,7 @@ header{
 }
 nav{
   grid-area: n;
+  overflow-y: hidden;
 }
 main{
   grid-area: m;
@@ -28,13 +28,6 @@ main{
 li{
   list-style: none;
 }
-/* article{
-  height: 300px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-} */
 .cards {
 	list-style: none;
 	white-space: nowrap;
