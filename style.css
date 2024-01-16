@@ -25,8 +25,12 @@ nav{
 main{
   grid-area: m;
 }
-li{
+h2{
+  color: white;
+}
+.menu{
   list-style: none;
+  display: inline-block;
 }
 .cards {
 	list-style: none;
@@ -85,4 +89,24 @@ li{
 	100% {
 		transform: translateX(100%) rotateY(95deg);
 	}
+
+/* telefoon filtermenu */
+}
+.html{
+  display: none;
+}
+.css{
+  display: none;
+}
+.js{
+  display: none;
+}
+.htmlToggle{
+  display: block;
+}
+.cssToggle{
+  display: block;
+}
+.jsToggle{
+  display: block;
 }
