@@ -21,6 +21,7 @@ header{
 nav{
   grid-area: n;
   overflow-y: hidden;
+  display: none;
 }
 main{
   grid-area: m;
@@ -89,24 +90,29 @@ h2{
 	100% {
 		transform: translateX(100%) rotateY(95deg);
 	}
+}
 
 /* telefoon filtermenu */
-}
-.html{
-  display: none;
-}
-.css{
-  display: none;
-}
-.js{
-  display: none;
-}
-.htmlToggle{
-  display: block;
-}
-.cssToggle{
-  display: block;
-}
-.jsToggle{
-  display: block;
+@media only screen and (max-width: 600px) {
+  nav{
+    display: block;
+  }
+  .htmlbar{
+    display: none;
+  }
+  .cssbar{
+    display: none;
+  }
+  .jsbar{
+    display: none;
+  }
+  .htmlToggle{
+    display: block;
+  }
+  .cssToggle{
+    display: block;
+  }
+  .jsToggle{
+    display: block;
+  }
 }
