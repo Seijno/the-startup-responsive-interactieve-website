@@ -97,6 +97,9 @@ h2{
   nav{
     display: block;
   }
+  .htmlButton, .cssButton, .jsButton{
+    background: orange;
+  }
   .htmlbar{
     display: none;
   }
