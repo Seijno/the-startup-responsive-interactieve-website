@@ -52,8 +52,7 @@ h2{
   animation: linear adjust-z-index both;
 	animation-timeline: --li-in-and-out-of-view;
   perspective: 40em;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .cards li > img {

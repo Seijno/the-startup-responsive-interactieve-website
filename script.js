@@ -1,11 +1,11 @@
-var htmlButton = document.getElementById('htmlBtn');
-var htmlBar = document.querySelector('.htmlbar');
+const htmlButton = document.getElementById('htmlBtn');
+const htmlBar = document.querySelector('.htmlbar');
 
-var cssButton = document.getElementById('cssBtn');
-var cssBar = document.querySelector('.cssbar');
+const cssButton = document.getElementById('cssBtn');
+const cssBar = document.querySelector('.cssbar');
 
-var jsButton = document.getElementById('jsBtn');
-var jsBar = document.querySelector('.jsbar');
+const jsButton = document.getElementById('jsBtn');
+const jsBar = document.querySelector('.jsbar');
 
 htmlButton.addEventListener('click', changehtml );
 cssButton.addEventListener('click', changecss );
