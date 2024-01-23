@@ -1,6 +1,9 @@
 
+/* basis coomponenten */
 *{
   overflow-x: hidden;
+  --header-bg: rgb(255, 174, 0);
+  --white-filler: rgb(201, 201, 201)
 }
 #grid{
   display: grid;
@@ -15,7 +18,7 @@ html{
   background: rgb(27, 27, 27);
 }
 header{
-  background: rgb(255, 174, 0);
+  background: var(--header-bg);
   grid-area: h;
 }
 nav{
@@ -27,8 +30,11 @@ main{
   grid-area: m;
 }
 h2{
-  color: white;
+  color: var(--white-filler);
 }
+
+/* menu/filtermenu */
+
 .menu{
   list-style: none;
   display: inline-block;
@@ -37,46 +43,30 @@ h2{
 .filterMenu{
   display: inline-block;
 }
-.arrows{
-  display: none;
-}
+
+/* animatie */
 .cards {
 	list-style: none;
 	white-space: nowrap;
-	max-width: calc(var(--cover-size) * 6);
 	overflow: scroll;
   scroll-snap-type: x mandatory;
   overflow-y:hidden ;
 }
 .cards li {
 	display: inline-block;
-	width: var(--cover-size);
 	aspect-ratio: 1;
   scroll-snap-align: center;
   view-timeline-name: --li-in-and-out-of-view;
 	view-timeline-axis: inline;
-  animation: linear adjust-z-index both;
+  animation: linear;
 	animation-timeline: --li-in-and-out-of-view;
-  perspective: 40em;
+  perspective: 40rem;
   overflow: hidden;
 }
 
 .cards li > img {
-	/* Link an animation to the established view-timeline (of the parent li) and have it run during the contain phase */
 	animation: linear rotate-cover both;
 	animation-timeline: --li-in-and-out-of-view;
-}
-
-@keyframes adjust-z-index {
-	0% {
-		z-index: 1;
-	}
-	50% {
-		z-index: 100; /* When at the center, be on top */
-	}
-	100% {
-		z-index: 1;
-	}
 }
 
 @keyframes rotate-cover {
@@ -97,13 +87,19 @@ h2{
 	}
 }
 
+/* overig */
+
+.arrows{
+  display: none;
+}
+
 /* telefoon filtermenu */
 @media only screen and (max-width: 600px) {
   nav{
     display: block;
   }
   .htmlButton, .cssButton, .jsButton{
-    background: orange;
+    background: var(--header-bg);
   }
   .htmlbar{
     display: none;
@@ -126,7 +122,7 @@ h2{
   .arrows{
     margin: 0 auto;
     width:8rem;
-    color: rgb(201, 201, 201);
+    color: var(--white-filler);
     display: flex;
   }
 }
