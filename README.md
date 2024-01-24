@@ -1,8 +1,8 @@
 # GRRR.TECH Redesign
 Deze opdracht is een redesign van de artikel pagina van grrr.tech
 
-<img with="600px" src="https://github.com/Seijno/the-startup-responsive-interactieve-website/assets/104066080/6ba161d0-b4d9-435f-b027-9e916b55d55e">
-<img width="600px" src="https://github.com/Seijno/the-startup-responsive-interactieve-website/assets/104066080/b0cdcd46-0708-44db-b970-0e5c0358ac36">
+<img width="900px" src="https://github.com/Seijno/the-startup-responsive-interactieve-website/assets/104066080/6ba161d0-b4d9-435f-b027-9e916b55d55e">
+<img width="300px" src="https://github.com/Seijno/the-startup-responsive-interactieve-website/assets/104066080/b0cdcd46-0708-44db-b970-0e5c0358ac36">
 
 
 ## Inhoudsopgave
