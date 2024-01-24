@@ -101,6 +101,9 @@ h2{
   .htmlButton, .cssButton, .jsButton{
     background: var(--header-bg);
   }
+  #allBtn{
+    background: var(--header-bg);
+  }
   .htmlbar{
     display: none;
   }
@@ -108,6 +111,9 @@ h2{
     display: none;
   }
   .jsbar{
+    display: none;
+  }
+  .allToggle{
     display: none;
   }
   .htmlToggle{

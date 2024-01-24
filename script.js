@@ -19,10 +19,10 @@ function changehtml(){
   htmlButton.classList.toggle('htmlButton')
 }
 function changecss(){
-    cssBar.classList.toggle('cssToggle');
-    cssButton.classList.toggle('cssButton')
-  }
-  function changejs(){
-    jsBar.classList.toggle('jsToggle');
-    jsButton.classList.toggle('jsButton')
-  }
+  cssBar.classList.toggle('cssToggle');
+  cssButton.classList.toggle('cssButton')
+}
+function changejs(){
+  jsBar.classList.toggle('jsToggle');
+  jsButton.classList.toggle('jsButton')
+}
